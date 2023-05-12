@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+/* ||RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ||VARIABLES */
+:root {
+    /* Primary Color */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral Color */
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-backgroundheadings-buttons: hsl(0, 0%, 95%);
+}
+
+/* ||GENERAL */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--Very-light-gray-backgroundheadings-buttons);
+    margin-top: 2rem;
+}
+
+p {
+    color: var(--Transparent-white-paragraphs);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid var(--Very-light-gray-backgroundheadings-buttons);
+    background: var(--Very-light-gray-backgroundheadings-buttons);
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+}
+
+a:hover {
+    background: none;
+    color: var(--Very-light-gray-backgroundheadings-buttons);
+}
+
+/* ||MAIN CONTENT */
+main {
+    display: flex;
+    max-width: 860px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+section {
+    padding: 3rem 2.5rem;
+}
+
+.section-1 {
+    background: var(--Bright-orange);
+}
+
+.section-2 {
+    background: var(--Dark-cyan);
+}
+
+.section-3 {
+    background: var(--Very-dark-cyan);
+}
+
+img {
+    width: 3.4rem;
+}
+
+.section-1 a {
+    color: var(--Bright-orange);
+}
+
+.section-2 a {
+    color: var(--Dark-cyan);
+}
+
+.section-3 a {
+    color: var(--Very-dark-cyan);
+}
+
+.section-1 a:hover,
+.section-2 a:hover,
+.section-3 a:hover {
+    color: var(--Very-light-gray-backgroundheadings-buttons);
+}
+
+
+/* ||MEDIA QUERIES */
+@media only screen and (max-width: 900px) {
+    main {
+        display: block;
+        max-width: 430px;
+        margin: 4rem 1.5rem;
+    }
+}
